@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int strLength(const char* str)
+{
+    int size = 0;
+    while(*str++) ++size;
+    return size;
+}
+ 
+int main()
+{
+	
+    const char* str = "a b";
+    printf( "Kolichestvo simvolov: %d\n", strLength(str) );
+    return 0;
+}
